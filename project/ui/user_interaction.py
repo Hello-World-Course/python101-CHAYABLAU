@@ -1,5 +1,5 @@
 # THIS CODE IS WRONG, FIX IT AND ADD NEW CODE
-name = input("Hello, Whats Your Name ?")
+name = input("Hello, whats your name ?")
 
 board_size = input(f"{name}, please choose board size")
 
