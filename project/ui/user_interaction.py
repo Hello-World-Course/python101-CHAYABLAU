@@ -1,7 +1,20 @@
 # THIS CODE IS WRONG, FIX IT AND ADD NEW CODE
+name =None
+board_size =None
+number_of_mines= None
 name = input("Hello, whats your name")
-board_size= int(input(f"{name}, please choose board size"))
+if(len(name)<=2):
+    print("Your name is too short")
+    name=None
+else:
+    board_size = int(input(f"{name}, please choose board size"))
+if(name!=None):
+   if( board_size<0 or board_size>26):
+    print(f"{name}, you have entered illegal board size")
+   else:number_of_mines= int(input(f"{name}, for board size {board_size}, choose number of mines to allocate"))
 
-number_of_mines= int(input(f"{name}, for board size {board_size}, choose number of mines to allocate"))
-
-print(f"{name}, the board size is: {board_size} ,the number of mines is: {number_of_mines}. ENJOY!")
+if(name!=None):
+   if(number_of_mines>number_of_mines/2 or number_of_mines<0):
+    print(f"{name}, you have entered illegal number of mines")
+   else:
+       print(f"{name}, the board size is: {board_size} ,the number of mines is: {number_of_mines}. ENJOY!")
