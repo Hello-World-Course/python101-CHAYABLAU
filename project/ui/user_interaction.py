@@ -15,7 +15,7 @@ if(name!=None):
    else:number_of_mines= int(input(f"{name}, for board size {board_size}, choose number of mines to allocate"))
 
 if(name!=None):
-   if(number_of_mines>number_of_mines/2 or number_of_mines<0):
+   if(number_of_mines>board_size * board_size /2 or number_of_mines<0):
     print(f"{name}, you have entered illegal number of mines")
     number_of_mines=None
    else:
