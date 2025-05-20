@@ -1,7 +1,7 @@
 # THIS CODE IS WRONG, FIX IT AND ADD NEW CODE
-name = input("Hello, whats your name ?")
+name = input("Hello, whats your name")
 
-board_size = input(f"{name}, please choose board size")
+board_size = int(input(f"{name}, please choose board size"))
 
 print(f"for board size {board_size}, choose number of mines to allocate")
 number_of_mines=int(input())
