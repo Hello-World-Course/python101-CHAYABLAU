@@ -6,8 +6,8 @@ name = input("Hello, whats your name")
 if(len(name)<2):
     print("Your name is too short")
     name=None
-else:
-    board_size = int(input(f"{name}, please choose board size"))
+else: board_size = int(input(f"{name}, please choose board size"))
+
 if(name!=None):
    if( board_size<0 or board_size>26):
     print(f"{name}, you have entered illegal board size")
