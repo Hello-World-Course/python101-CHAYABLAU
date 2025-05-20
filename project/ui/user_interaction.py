@@ -6,6 +6,7 @@ name = input("Hello, whats your name")
 if(len(name)<2):
     print("Your name is too short")
     name=None
+    print(name,board_size,number_of_mines)
 else:
     board_size = int(input(f"{name}, please choose board size"))
     if( board_size<0 or board_size>26):
