@@ -1,6 +1,6 @@
 def is_on_board(x, y, board):
     # This is wrong fix it:
-    if len(board) > x and len(board) > y:
+    if len(board) > x >0 and len(board) > y>0:
         return True
     return False
 
