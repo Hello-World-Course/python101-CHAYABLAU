@@ -1,8 +1,8 @@
 def parse_cmd(command):
-    # This is wrong but close, you should fix it
-    command_name = command.split(" ")[0]
-    parameters = command.split(" ")[1]
-    return command_name, parameters
+
+    command_name = command.split(" ")
+    parameters = command_name[1:]
+    return command_name[0], parameters
 
 
 # This is a run example, use this to verify your code
