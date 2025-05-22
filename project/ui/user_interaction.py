@@ -9,7 +9,7 @@ def is_board_size_valid(board_size):
         return True
     return False
 def is_number_of_mines_valid( board_size,number_of_mines):
-    if number_of_mines <board_size*board_size/2:
+    if number_of_mines <board_size*board_size/2 and number_of_mines>0:
         return True
     return False
 def register_user():
