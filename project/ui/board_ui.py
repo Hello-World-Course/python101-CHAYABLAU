@@ -16,7 +16,7 @@ def draw_board(board):
     for row_index, row in enumerate(board):
       row_str = row_index + " |"
       for column in row:
-        row_str += column + "|"
+        row_str += str(column) + "|"
     result += row_str + "\n"
     return result
 
