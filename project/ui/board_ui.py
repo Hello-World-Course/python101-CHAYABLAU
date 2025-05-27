@@ -11,7 +11,7 @@ def draw_board(board):
     index_width = len(str(size))
     result = " " * index_width
     for i in range(size):
-        result = result_width + chr(ord('A') + i) + " "
+        result = result + chr(ord('A') + i) + " "
     result += "\n"
     for row_index, row in enumerate(board):
       row_str = row_index + " |"
