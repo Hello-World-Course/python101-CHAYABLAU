@@ -10,7 +10,10 @@ def safe_set_value( x, y, value, board):
         return True
     return False
 
-def create_empty_board(board_size,initial_value):
-    board = [[initial_value] * board_size for _ in range(board_size)]
+def create_empty_board(board_size, initial_value):
+    board = []
+    for _ in range(board_size):
+        row = [initial_value] * board_size
+        board.append(row)
     return board
 
