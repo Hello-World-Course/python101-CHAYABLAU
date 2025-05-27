@@ -14,7 +14,7 @@ def draw_board(board):
         result = result + chr(ord('A') + i) + " "
     result += "\n"
     for row_index, row in enumerate(board):
-      row_str = row_index + " |"
+      row_str = str(row_index) + " |"
       for column in row:
         row_str += str(column) + "|"
     result += row_str + "\n"
