@@ -9,7 +9,7 @@ def draw_board(board):
     # rows = len(board)
     size = len(board)
     index_width = len(str(size))
-    result = " " * index_width
+    result = " " * (index_width+1)
     for i in range(size):
         result = result + chr(ord('A') + i) + " "
     result += "\n"
