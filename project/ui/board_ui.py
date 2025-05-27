@@ -6,19 +6,25 @@ def parse_cmd(command):
 
 
 def draw_board(board):
-    # rows = len(board)
-    size = len(board)
-    index_width = len(str(size))
-    result = " " * (index_width+1)
+    size = len(board)  # מספר השורות וגם מספר העמודות
+
+    index_width = len(str(size - 1))  # רוחב ההזחה (למספרי שורות)
+    result = " " * (index_width + 1)  # רווחים לשורת האותיות
+
+    # שורת האותיות
     for i in range(size):
-        result = result + chr(ord('A') + i) + " "
+        result += chr(ord('A') + i) + " "
     result += "\n"
+
+    # שורות הלוח
     for row_index, row in enumerate(board):
-      row_str = str(row_index) + " |"
-      for column in row:
-        row_str += str(column) + "|"
-    result += row_str + "\n"
+        row_str = str(row_index).rjust(index_width) + " |"
+        for cell in row:
+            row_str += cell + "|"
+        result += row_str + "\n"
+
     return result
+
 
 def convert_coords(location: str) -> tuple[int, int]:
     row_str = ""
