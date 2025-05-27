@@ -8,8 +8,8 @@ def parse_cmd(command):
 def draw_board(board):
     size = len(board)  # מספר השורות וגם מספר העמודות
 
-    index_width = len(str(size - 1))  # רוחב ההזחה (למספרי שורות)
-    result = " " * (index_width + 1)  # רווחים לשורת האותיות
+    index_width = len(str(size-1))  # רוחב ההזחה (למספרי שורות)
+    result = " " * (index_width + 2)  # רווחים לשורת האותיות
 
     # שורת האותיות
     for i in range(size):
